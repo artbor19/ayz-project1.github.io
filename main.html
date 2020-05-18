@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Stock Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="Static/CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans+Condensed:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="card-panel teal lighten-4">
+    <h1 class="center-align titleCard">Stock Tracker</h1>
+  </div>
+  <div class="container">
+    <nav class="searchStyle">
+      <div class="nav-wrapper teal lighten-5">
+        <div class="row">
+          <form class="col s12">
+            <div class="input-field">
+              <input id="stockSearch" type="text" class="col s11 validate" placeholder="Enter company name here">
+              <a class="waves-effect waves-light btn teal darken-3" id="first-search">SEARCH</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col s3">
+        <div class="row">
+          <div class="col s12">
+            <div class="card cardStyle teal darken-4">
+              <div class="card-content">
+                <span class="card-title">GOOGLE</span>
+                <blockquote id="btnOne" class="borderStyle">
+                  <h2 class="flow-text">GOOG</h2>
+                  <h3 id="price1" class="flow-text"></h3>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="card cardStyle teal darken-4">
+              <div class="card-content">
+                <span class="card-title">AMAZON</span>
+                <blockquote id="btnThree" class="borderStyle">
+                  <h2 class="flow-text">AMZN</h2>
+                  <h3 id="price3" class="flow-text"></h3>
+                </blockquote>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+
+        <div id="main-stock" class="card cardStyle teal darken-4">
+          <div class="card-content">
+            <span class="card-title" id="card-title"></span>
+            <h2 id="searchedName"></h2>
+            <h3 id="searchedCode"></h3>
+            <h3 id="priceNow"></h3>
+          </div>
+
+        </div>
+      </div>
+      <div class="col s3">
+        <div class="row">
+          <div class="col s12">
+            <div class="card cardStyle teal darken-4">
+              <div class="card-content">
+                <span class="card-title">MICROSOFT</span>
+                <blockquote id="btnTwo" class="borderStyle">
+                  <h2 class="flow-text">MSFT</h2>
+                  <h3 id="price2" class="flow-text"></h3>
+                </blockquote>
+              </div>
+            </div>
+            <div class="card cardStyle teal darken-4">
+              <div class="card-content">
+                <span class="card-title">APPLE</span>
+                <blockquote id="btnFour" class="borderStyle">
+                  <h2 class="flow-text">AAPL</h2>
+                  <h3 id="price4" class="flow-text"></h3>
+                </blockquote>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <a id="backToMain" class="waves-effect waves-light btn-large" style="width:100%">Back to Main</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <br>
+        <div class="card teal lighten-5~">
+          <div class="card-header">
+            <h1 id="top-articles">
+              <i class="fa fa-table"></i>Top Articles: </h1>
+          </div>
+          <div class="card-body" id="article-section">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12">
+      <div class="row">
+        <h1 id="searchThing"></h1>
+        <div id="searchResults"></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="Static/JS/main.js"></script>
+</body>
+
+</html>

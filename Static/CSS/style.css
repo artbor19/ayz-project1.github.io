@@ -1,0 +1,51 @@
+body {
+    background-image: url(money-background.jpg);
+}
+
+.cardStyle {
+    color: white;
+    font-family: "Jost", sans-serif;
+    padding: 30px;
+  }
+  .borderStyle {
+    border-left: 3px solid white;
+  }
+
+.titleCard {
+    color: #004d40;
+    font-weight: bolder;
+    font-family: 'Righteous', cursive;
+}
+
+#main-stock {
+  text-align: center;
+}
+
+#top-articles {
+  font-size: 36px;
+  }
+  .article-header {
+    font-family: 'Bebas Neue', cursive;
+  }
+  .article-info {
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding-left: 20px;
+  }
+  .link {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  #top-articles {
+    padding: 15px;
+    font-family: 'Bebas Neue', cursive;
+  }
+  body > div.container > div:nth-child(4) > div > div {
+    opacity: 85%;
+    border-color: white
+  }
+
+  #searchThing {
+    color: #004d40;
+    background: #e0f2f1;
+    opacity: 85%;
+  }

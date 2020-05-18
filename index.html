@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="Static/CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="card-panel teal lighten-4">
+    <h1 class="center-align titleCard">Stock Tracker</h1>
+  </div>
+
+  <div class="container">
+    <nav>
+      <div class="nav-wrapper teal lighten-5">
+        <div class="row">
+          <form class="col s12">
+            <div class="input-field">
+              <input id="stockSearch" type="text" class=" col s10 validate" placeholder="Enter company name here">
+              <a class="waves-effect waves-light btn teal darken-2" id="first-search">SEARCH</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col s6">
+        <div class="card teal darken-4 cardStyle">
+          <div class="card-content">
+            <span class="card-title">GOOGLE</span>
+            <blockquote id="btnOne" class="borderStyle">
+              <h2>GOOG</h2>
+              <h3 id="price1" class="flow-text"></h3>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="card teal darken-4 cardStyle">
+          <div class="card-content">
+            <span class="card-title">MICROSOFT</span>
+            <blockquote id="btnTwo" class="borderStyle">
+              <h2>MSFT</h2>
+              <h3 id="price2" class="flow-text"></h3>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6">
+          <div class="card teal darken-4 cardStyle">
+            <div class="card-content">
+              <span class="card-title">AMAZON</span>
+              <blockquote id="btnThree" class="borderStyle">
+                <h2>AMZN</h2>
+                <h3 id="price3" class="flow-text"></h3>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="card teal darken-4 cardStyle">
+            <div class="card-content">
+              <span class="card-title">APPLE</span>
+              <blockquote id="btnFour" class="borderStyle">
+                <h2>AAPL</h2>
+                <h3 id="price4" class="flow-text"></h3>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12">
+        <div class="row">
+          <h1 id="searchThing"></h1>
+          <div id="searchResults"></div>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript"></script>
+      <script src="Static/JS/script.js"></script>
+</body>
+
+</html>
+
+</html>
